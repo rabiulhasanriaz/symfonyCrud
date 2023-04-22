@@ -13,7 +13,7 @@ show:
     path: /article/{id}
     # the controller value has the format 'controller_class::method_name'
     controller:  App\Controller\ArticleController::show
-    methods:    GET|HEAD
+    methods:    GET
 
 delete:
     path: /article/delete/{id}
