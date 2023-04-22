@@ -25,4 +25,4 @@ edit_article:
     path: /article/edit/{id}
     # the controller value has the format 'controller_class::method_name'
     controller:  App\Controller\ArticleController::edit
-    methods:    POST
+    methods:    POST|GET
