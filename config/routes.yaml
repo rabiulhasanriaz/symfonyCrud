@@ -1,0 +1,28 @@
+hello:
+    path: /
+    # the controller value has the format 'controller_class::method_name'
+    controller:  App\Controller\ArticleController::index
+
+new_article:
+    path: /article/new
+    # the controller value has the format 'controller_class::method_name'
+    controller:  App\Controller\ArticleController::new
+    methods:    GET|POST
+
+show:
+    path: /article/{id}
+    # the controller value has the format 'controller_class::method_name'
+    controller:  App\Controller\ArticleController::show
+    methods:    GET|HEAD
+
+delete:
+    path: /article/delete/{id}
+    # the controller value has the format 'controller_class::method_name'
+    controller:  App\Controller\ArticleController::delete
+    methods:    GET|HEAD
+
+edit_article:
+    path: /article/edit/{id}
+    # the controller value has the format 'controller_class::method_name'
+    controller:  App\Controller\ArticleController::edit
+    methods:    POST|GET
